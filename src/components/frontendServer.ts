@@ -101,7 +101,7 @@ class ClientManager implements I_clientManager {
      * Front-end server load routing processing
      */
     private loadHandler() {
-        let dirName = path.join(this.app.base, define.some_config.File_Dir.Servers, this.serverType, "handler");
+        let dirName = path.join(this.app.base, define.some_config.FileDir.Servers, this.serverType, "handler");
         let exists = fs.existsSync(dirName);
         if (exists) {
             let self = this;

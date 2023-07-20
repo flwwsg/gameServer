@@ -126,7 +126,7 @@ class rpc_create {
         let self = this;
         app.rpc = this.rpcFunc.bind(this);
         let tmp_rpc_obj = this.rpcObj as any;
-        let dirName = path.join(app.base, define.some_config.File_Dir.Servers);
+        let dirName = path.join(app.base, define.some_config.FileDir.Servers);
         let exists = fs.existsSync(dirName);
         if (!exists) {
             return;

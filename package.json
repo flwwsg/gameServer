@@ -9,9 +9,11 @@
 	},
 	"bundleDependencies": false,
 	"dependencies": {
-		"@types/node": "^20.4.2",
-		"@types/ws": "^8.5.5",
 		"ws": "^8.13.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.16.19",
+		"@types/ws": "^8.5.5"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test   specified\" && exit 1"

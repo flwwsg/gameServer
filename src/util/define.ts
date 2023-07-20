@@ -11,7 +11,7 @@ export let some_config = {
         Rpc_Heart_Beat_Time: 60,
         Rpc_Heart_Beat_Timeout_Time: 10,
     },
-    File_Dir: {
+    FileDir: {
         Servers: "servers",
         Config: "config/sys"
     },

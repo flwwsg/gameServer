@@ -518,7 +518,7 @@ function cli_init() {
                     let oCurrent = path.resolve(origin, datalist[i]);
                     let tCurrent = path.resolve(target, datalist[i]);
                     if (fs.statSync(oCurrent).isFile()) {
-                        fs.writeFileSync(tCurrent, fs.readFileSync(oCurrent, ''), '');
+                        fs.writeFileSync(tCurrent, fs.readFileSync(oCurrent, null), null);
                         console.log('   create :  ' + tCurrent);
                     } else if (fs.statSync(oCurrent).isDirectory()) {
                         copy(oCurrent, tCurrent);

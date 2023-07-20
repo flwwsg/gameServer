@@ -32,7 +32,7 @@ export class BackendServer {
      * Back-end server load routing processing
      */
     private loadHandler() {
-        let dirName = path.join(this.app.base, define.some_config.File_Dir.Servers, this.app.serverType, "handler");
+        let dirName = path.join(this.app.base, define.some_config.FileDir.Servers, this.app.serverType, "handler");
         let exists = fs.existsSync(dirName);
         if (exists) {
             let self = this;

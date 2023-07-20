@@ -92,9 +92,9 @@ let parseArgs = function (args: any[]) {
 
 
 let loadBaseConfig = function (app: Application) {
-    loadConfigBaseApp(app, "masterConfig", path.join(some_config.File_Dir.Config, 'master.js'));
-    loadConfigBaseApp(app, "serversConfig", path.join(some_config.File_Dir.Config, 'servers.js'));
-    loadConfigBaseApp(app, "routeConfig", path.join(some_config.File_Dir.Config, 'route.js'));
+    loadConfigBaseApp(app, "masterConfig", path.join(some_config.FileDir.Config, 'master.js'));
+    loadConfigBaseApp(app, "serversConfig", path.join(some_config.FileDir.Config, 'servers.js'));
+    loadConfigBaseApp(app, "routeConfig", path.join(some_config.FileDir.Config, 'route.js'));
 
     function loadConfigBaseApp(app: Application, key: "masterConfig" | "serversConfig" | "routeConfig", val: string) {
         let env = app.env;

@@ -115,7 +115,7 @@ let localIps = function () {
         }
     };
     for (let dev in ifaces) {
-        ifaces[dev].forEach(func);
+        ifaces[dev]?.forEach(func);
     }
     return ips;
 }();
