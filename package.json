@@ -3,28 +3,15 @@
 	"version": "2.3.6",
 	"description": "a framework of typescript game server",
 	"deprecated": false,
-	"main": "lib/mydog.js",
-	"types": "mydog.d.ts",
+	"main": "dist/app.js",
 	"bin": {
-		"mydog": "lib/cli.js"
-	},
-	"author": {
-		"name": "ahuang",
-		"email": "1124831983@qq.com"
-	},
-	"homepage": "http://www.mydog.wiki",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ahuangege/mydog.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ahuangege/mydog/issues"
+		"mydog": "dist/cli.js"
 	},
 	"bundleDependencies": false,
 	"dependencies": {
-		"@types/node": "^12.0.8",
-		"@types/ws": "^6.0.1",
-		"ws": "^7.0.1"
+		"@types/node": "^20.4.2",
+		"@types/ws": "^8.5.5",
+		"ws": "^8.13.0"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test   specified\" && exit 1"
